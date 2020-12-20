@@ -79,7 +79,7 @@ export default {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  background-image: url("/image/firstscreen-img.jpg");
+  background-image: url("~static/image/firstscreen-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }

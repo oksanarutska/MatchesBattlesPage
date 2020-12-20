@@ -2,7 +2,7 @@ import moment from 'moment'
 
 export const state = () => ({
     welcomScreen: {
-        gameIcon: { src: '/icons/battlegrounds-icon.svg', alt: "battlegrounds" },
+        gameIcon: { src: 'icons/battlegrounds-icon.svg', alt: "battlegrounds" },
         title: 'StarSeries i-League CSGO Season 8',
         description: 'Parimatch League CS:GO is the new online league in Counter-Strike: Global Offensive from Parimatch and StarLadder, with $100,000 total prize pool. 16 teams from Europe and the CIS will take part in the League, with 4 teams going to League through open qualifiers.',
         buttonAnnouncement: { text: 'Read Announcement', icon: 'arrow' },
@@ -40,18 +40,18 @@ export const state = () => ({
 
                     team1: {
                         id: 0,
-                        logo: '/image/teamIcons/GloriaHenry.svg',
+                        logo: 'image/teamIcons/GloriaHenry.svg',
                         name: "Gloria Henry",
                         rate: '53.22'
                     },
                     team2: {
                         id: 1,
-                        logo: '/image/teamIcons/AlbertWarren.svg',
+                        logo: 'image/teamIcons/AlbertWarren.svg',
                         name: "Albert Warren",
                         rate: '3.22'
                     },
                     system: 'Bо 3',
-                    partner: '/icons/ggbet.svg'
+                    partner: 'icons/ggbet.svg'
                 },
                 {
                     id: 1,
@@ -63,18 +63,18 @@ export const state = () => ({
                     team1:
                     {
                         id: 0,
-                        logo: '/image/teamIcons/ReginaWatson.svg',
+                        logo: 'image/teamIcons/ReginaWatson.svg',
                         name: "Regina Watson",
                         rate: '3.22'
                     },
                     team2: {
                         id: 1,
-                        logo: '/image/teamIcons/KathrynJones.svg',
+                        logo: 'image/teamIcons/KathrynJones.svg',
                         name: "Kathryn Jones",
                         rate: '53.22'
                     },
                     system: 'Bо 3',
-                    partner: '/icons/ggbet.svg'
+                    partner: 'icons/ggbet.svg'
                 },
                 {
                     id: 2,
@@ -86,18 +86,18 @@ export const state = () => ({
                     team1:
                     {
                         id: 0,
-                        logo: '/image/teamIcons/RicardoHawkins.svg',
+                        logo: 'image/teamIcons/RicardoHawkins.svg',
                         name: "Ricardo Hawkins",
                         rate: '3.22'
                     },
                     team2: {
                         id: 1,
-                        logo: '/image/teamIcons/BruceSimmmons.svg',
+                        logo: 'image/teamIcons/BruceSimmmons.svg',
                         name: "Bruce Simmmons",
                         rate: '53.22'
                     },
                     system: 'Bо 3',
-                    partner: '/icons/ggbet.svg'
+                    partner: 'icons/ggbet.svg'
                 },
                 {
                     id: 3,
@@ -109,18 +109,18 @@ export const state = () => ({
                     team1:
                     {
                         id: 0,
-                        logo: '/image/teamIcons/JennyBell.svg',
+                        logo: 'image/teamIcons/JennyBell.svg',
                         name: "Jenny Bell",
                         rate: '3.22'
                     },
                     team2: {
                         id: 1,
-                        logo: '/image/teamIcons/ArleneRobertson.svg',
+                        logo: 'image/teamIcons/ArleneRobertson.svg',
                         name: "Arlene Robertson",
                         rate: '53.22'
                     },
                     system: 'Bо 3',
-                    partner: '/icons/ggbet.svg'
+                    partner: 'icons/ggbet.svg'
                 },
             ]
         },
@@ -133,7 +133,7 @@ export const state = () => ({
                     name: "Group Stage",
                     type: 'Live',
                     time: "WATCH LIVE!",
-                    disciplines: '/icons/disciplines.svg',
+                    disciplines: 'icons/disciplines.svg',
                     groups: ["Group A", "Group B"],
                     match: "Match #1",
                     map: "Map: Erangel"
@@ -143,7 +143,7 @@ export const state = () => ({
                     name: "Group Stage",
                     time: "19:00",
                     date: "March 8",
-                    disciplines: '/icons/disciplines.svg',
+                    disciplines: 'icons/disciplines.svg',
                     groups: ["Group A", "Group B"],
                     match: "Match #2",
                     map: "Map: Erangel"
@@ -153,7 +153,7 @@ export const state = () => ({
                     name: "Group Stage",
                     time: "19:00",
                     date: "March 8",
-                    disciplines: '/icons/disciplines.svg',
+                    disciplines: 'icons/disciplines.svg',
                     groups: ["Group A", "Group B"],
                     match: "Match #3",
                     map: "Map: Erangel"
@@ -163,7 +163,7 @@ export const state = () => ({
                     name: "Group Stage",
                     time: "19:00",
                     date: "March 8",
-                    disciplines: '/icons/disciplines.svg',
+                    disciplines: 'icons/disciplines.svg',
                     groups: ["Group A", "Group B"],
                     match: "Match #4",
                     map: "Map: Erangel"
@@ -180,82 +180,82 @@ export const state = () => ({
         {
             id: "353",
             name: "Dianne Russell",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
         {
             id: "2",
             name: "Natus Vincere",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
         {
             id: "3",
             name: "Natus Vincere",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
         {
             id: "4",
             name: "Natus Vincere",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
         {
             id: "5",
             name: "Natus Vincere",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
         {
             id: "6",
             name: "Natus Vincere",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
         {
             id: "7",
             name: "Natus Vincere",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
         {
             id: "8",
             name: "Natus Vincere",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
         {
             id: "9",
             name: "Natus Vincere",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
         {
             id: "10",
             name: "Natus Vincere",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
         {
             id: "11",
             name: "Natus Vincere",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
         {
             id: "12",
             name: "Natus Vincere",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
         {
             id: "13",
             name: "Natus Vincere",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
         {
             id: "14",
             name: "Natus Vincere",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
         {
             id: "15",
             name: "Natus Vincere",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
         {
             id: "16",
             name: "Natus Vincere",
-            flag: '/icons/flag.svg'
+            flag: 'icons/flag.svg'
         },
 
     ],

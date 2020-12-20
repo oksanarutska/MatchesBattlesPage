@@ -137,7 +137,7 @@ export default {
     top: 0;
     width: vw(182px);
     height: vw(164px);
-    background-image: url("icons/date-star.svg");
+    background-image: url("/icons/date-star.svg");
     background-repeat: no-repeat;
     background-size: cover;
     .show-date_wrapper {
@@ -152,7 +152,7 @@ export default {
       }
     }
     &_live {
-      background-image: url("icons/live-star.svg");
+      background-image: url("/icons/live-star.svg");
       .show-date_wrapper {
         .play {
           margin-bottom: vw(9px);

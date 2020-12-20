@@ -39,8 +39,14 @@ export default {
     '@nuxtjs/style-resources',
   ],
 
+  /*
+** Customize the base url
+*/
+  router: {
+    base: '/MatchesBattlesPage/'
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    publicPath: '/MatchesBattlesPage/'
   }
 }

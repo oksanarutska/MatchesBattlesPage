@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  color: $cl-black;
+}
+
+* {
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-family: $font-family;
+}
+
+a {
+  text-decoration: none;
+  font-family: $font-family;
+  -webkit-tap-highlight-color: transparent;
+  color: $cl-black;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+.container{
+  width: 100vw;
+  padding: 0 vw(240px);
+  background-color: $cl-background;
+}

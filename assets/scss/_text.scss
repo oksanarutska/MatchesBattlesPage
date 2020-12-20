@@ -1,0 +1,61 @@
+.h2 {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: vw(60px);
+    line-height: 115%;
+}
+.p2 {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: vw(18px);
+    line-height: 167%;
+    letter-spacing: 0.01em;
+    &.accent {
+        font-weight: 700;
+    }
+}
+.button1 {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: vw(14px);
+    line-height: 143%;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.h3 {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: vw(32px);
+    line-height: 141%;
+}
+.caption {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: vw(14px);
+    line-height: 143%;
+    letter-spacing: 0.01em;
+}
+.h5 {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: vw(24px);
+    line-height: 146%;
+}
+.rate {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: vw(14px);
+    line-height: 143%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+.subtitle {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: vw(16px);
+    line-height: 156%;
+    letter-spacing: 0.01em;
+    &.accent {
+        font-weight: 700;
+    }
+}

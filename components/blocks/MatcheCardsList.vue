@@ -1,10 +1,6 @@
 <template>
   <div class="matche-cards-list">
-    <MatcheCard
-      :card="card"
-      v-for="card in cards"
-      :key="card.id"
-    />
+    <MatcheCard :card="card" v-for="card in cards" :key="card.id" />
   </div>
 </template>
 
@@ -16,11 +12,11 @@ export default {
   data() {
     return {};
   },
-  props:{
-      cards:{
-          type: Array,
-          default: ()=>([])
-      }
+  props: {
+    cards: {
+      type: Array,
+      default: () => [],
+    },
   },
   components: {
     MatcheCard,
@@ -34,5 +30,11 @@ export default {
   grid-column-gap: vw(35px);
   grid-auto-flow: column;
   margin-bottom: vw(90px);
+  @include max(md) {
+    grid-column-gap: unset;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 </style>

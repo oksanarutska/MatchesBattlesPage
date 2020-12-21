@@ -32,11 +32,18 @@ export default {
   cursor: pointer;
   box-shadow: inset 0 0 0 1px transparent;
   transition: box-shadow 0.3s ease-in-out;
-  &:hover{
-      box-shadow: inset 0 0 0 1px $cl-green;
+  @include max(md) {
+    height: 48px;
+    padding: 0 20px;
+  }
+  &:hover {
+    box-shadow: inset 0 0 0 1px $cl-green;
   }
   &__number {
     width: vw(70px);
+    @include max(md) {
+      width: 48px;
+    }
   }
   &__info {
     display: flex;
@@ -45,6 +52,11 @@ export default {
       width: vw(18px);
       height: vw(24px);
       margin-right: vw(10px);
+      @include max(md) {
+        width: 18px;
+        height: 24px;
+        margin-right: 10px;
+      }
     }
   }
 }

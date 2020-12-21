@@ -119,6 +119,16 @@ export default {
   box-sizing: border-box;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
+  @include max(md) {
+    min-width: 200px;
+    width: 100%;
+    min-height: 240px;
+    margin-bottom: 12px;
+    padding: 15px;
+  }
+  @include max(sm) {
+    min-height: 225px;
+  }
   &-link {
     transition: border 0.3s ease-in-out;
     &:hover {
@@ -130,6 +140,10 @@ export default {
     top: vw(25px);
     left: vw(25px);
     color: $cl-grey-dr;
+    @include max(md) {
+      top: 15px;
+      left: 15px;
+    }
   }
   .matche-status {
     position: absolute;
@@ -137,9 +151,14 @@ export default {
     top: 0;
     width: vw(182px);
     height: vw(164px);
-    background-image: url("/icons/date-star.svg");
+    background-image: url("~static/icons/date-star.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    @include max(md) {
+      width: 160px;
+      height: 140px;
+      background-position: bottom;
+    }
     .show-date_wrapper {
       position: absolute;
       top: vw(25px);
@@ -147,13 +166,21 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      @include max(md) {
+        top: 15px;
+        right: 15px;
+      }
       .caption {
         color: $cl-grey-dr;
       }
     }
     &_live {
-      background-image: url("/icons/live-star.svg");
+      background-image: url("~static/icons/live-star.svg");
       .show-date_wrapper {
+        @include max(md) {
+          top: 15px;
+          right: 30px;
+        }
         .play {
           margin-bottom: vw(9px);
           margin-right: 5px;
@@ -162,6 +189,10 @@ export default {
         .caption {
           text-transform: uppercase;
           color: $cl-white;
+          @include max(md) {
+            max-width: 40px;
+            text-align: center;
+          }
         }
       }
     }
@@ -177,14 +208,24 @@ export default {
     img {
       width: vw(50px);
       height: vw(50px);
+      @include max(md) {
+        width: 40px;
+        height: 40px;
+      }
       &:not(:last-child) {
         margin-right: vw(15px);
+        @include max(md) {
+          margin-right: 12px;
+        }
       }
     }
   }
   .name-teams_wrapper {
     width: 100%;
     margin-bottom: 10px;
+    @include max(md) {
+      margin-bottom: 5px;
+    }
     .name-team {
       width: 100%;
       display: flex;
@@ -193,6 +234,9 @@ export default {
       color: $cl-black;
       &:not(:last-child) {
         margin-bottom: 5px;
+        @include max(md) {
+          margin-bottom: 0px;
+        }
       }
       .team-rate {
         width: vw(60px);
@@ -202,6 +246,10 @@ export default {
         justify-content: center;
         background: $cl-grey-lt;
         border: 1px solid rgba(151, 151, 151, 0.1);
+        @include max(md) {
+          width: 55px;
+          height: 20px;
+        }
       }
     }
   }
@@ -224,6 +272,10 @@ export default {
     .partner {
       width: vw(62px);
       height: vw(15px);
+      @include max(lg) {
+        width: 62px;
+        height: 15px;
+      }
     }
   }
 }

@@ -58,8 +58,17 @@ button {
   padding: 0;
   cursor: pointer;
 }
-.container{
+.container {
   width: 100vw;
   padding: 0 vw(240px);
   background-color: $cl-background;
+  @include max(lg) {
+    padding: 0 120px;
+  }
+  @include max(md) {
+    padding: 0 90px;
+  }
+  @include max(sm) {
+    padding: 0 20px;
+  }
 }

@@ -1,4 +1,5 @@
 export default {
+  target: 'static',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'Starladder',
@@ -38,6 +39,13 @@ export default {
   modules: [
     '@nuxtjs/style-resources',
   ],
+
+  /*
+** Customize the base url
+*/
+  router: {
+    base: '/MatchesBattlesPage/'
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {

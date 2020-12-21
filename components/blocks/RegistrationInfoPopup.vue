@@ -1,5 +1,13 @@
 <template>
-  <div class="registration-info-popup"></div>
+  <div class="registration-info-popup">
+    <div class="info">
+      <p class="button1">{{ data.title }}</p>
+      <p class="caption">Team: {{ data.team }}</p>
+    </div>
+    <svg class="check">
+      <use xlink:href="#check"></use>
+    </svg>
+  </div>
 </template>
 
 <script>
@@ -9,6 +17,12 @@ export default {
   name: "RegistrationInfoPopup",
   components: {
     RegistrationBlock,
+  },
+  props: {
+    data: {
+      type: Object,
+      default: () => ({}),
+    },
   },
 };
 </script>
@@ -22,6 +36,10 @@ export default {
   align-items: center;
   justify-content: center;
   background-color: $cl-green;
+  @include max(md) {
+    width: 100%;
+    height: 50px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -32,6 +50,24 @@ export default {
     clip-path: polygon(100% 0, 0 0, 0 100%);
     display: flex;
     background-color: rgba($cl-white, 0.2);
+    @include max(md) {
+      width: 80%;
+    }
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $cl-white;
+  }
+  .check {
+    position: absolute;
+    left: vw(20px);
+    top: 50%;
+    transform: translateY(-50%);
+    @include max(md) {
+      left: 20px;
+    }
   }
 }
 </style>

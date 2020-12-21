@@ -79,9 +79,23 @@ export default {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  background-image: url("/image/firstscreen-img.jpg");
+  background-image: url("~static/image/firstscreen-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  @include max(lg) {
+    padding: 125px 120px;
+  }
+  @include max(md) {
+    padding: 125px 90px 60px 90px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @include max(sm) {
+    height: 100%;
+    flex-direction: column;
+    padding: 125px 20px 60px 20px;
+  }
 }
 .welcom-screen__description {
   max-width: vw(720px);
@@ -89,12 +103,26 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  @include max(md) {
+    width: 100%;
+    max-width: unset;
+  }
+  @include max(sm) {
+    height: 100vh;
+    padding-top: 20%;
+  }
   .game-icon {
     margin-bottom: vw(49px);
+    @include max(md) {
+      margin-bottom: 24px;
+    }
   }
   .h2 {
     margin-bottom: vw(50px);
     color: $cl-white;
+    @include max(sm) {
+      margin-bottom: 20px;
+    }
   }
   .description {
     position: relative;
@@ -102,6 +130,10 @@ export default {
     padding-left: vw(42px);
     margin-bottom: vw(87px);
     display: flex;
+    @include max(md) {
+      padding-left: 20px;
+      margin-bottom: 40px;
+    }
     span {
       position: absolute;
       left: 0;
@@ -120,8 +152,25 @@ export default {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    .button-bl:not(:last-child) {
-      margin-right: vw(35px);
+    @include max(md) {
+      width: 100%;
+      margin-bottom: 60px;
+    }
+    @include max(sm) {
+      width: 100%;
+      flex-direction: column;
+    }
+    .button-bl {
+      &:not(:last-child) {
+        margin-right: vw(35px);
+        @include max(md) {
+          margin-right: 35px;
+        }
+         @include max(sm) {
+           margin-right: 0;
+           margin-bottom: 20px;
+         }
+      }
     }
   }
 }
@@ -131,6 +180,9 @@ export default {
   align-items: flex-start;
   .description {
     margin-bottom: vw(100px);
+    @include max(md) {
+      margin-bottom: 30px;
+    }
     &_item {
       display: flex;
       align-items: center;
@@ -138,6 +190,9 @@ export default {
         color: $cl-white;
         &:first-child {
           margin-right: vw(40px);
+          @include max(md) {
+            margin-right: 24px;
+          }
         }
       }
     }
@@ -145,8 +200,11 @@ export default {
   .social-links {
     a {
       color: $cl-white;
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-right: vw(40px);
+        @include max(md) {
+          margin-right: 24px;
+        }
       }
 
       .twitter {
@@ -170,7 +228,7 @@ export default {
       .vk {
         transition: color 0.3s ease-in-out;
         &:hover {
-          color: #4376A6;
+          color: #4376a6;
         }
       }
     }

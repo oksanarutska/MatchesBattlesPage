@@ -36,8 +36,15 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  @include max(md) {
+    width: 100%;
+    margin-right: 0;
+  }
   .title {
     margin-bottom: vw(30px);
+    @include max(md) {
+      margin-bottom: 20px;
+    }
   }
   &__header {
     width: 100%;
@@ -45,8 +52,15 @@ export default {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+    @include max(md) {
+      padding: 0 25px;
+    }
+
     .number {
       width: vw(60px);
+      @include max(md) {
+        width: 40px;
+      }
     }
     .caption {
       letter-spacing: 0.02em;

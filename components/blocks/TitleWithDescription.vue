@@ -1,9 +1,9 @@
 <template>
   <div class="title-with-description">
-      <h3 class="h3">
-        {{ data.title }}
-      </h3>
-      <p class="p2 description" v-html="data.description"></p>
+    <h3 class="h3">
+      {{ data.title }}
+    </h3>
+    <p class="p2 description" v-html="data.description"></p>
   </div>
 </template>
 
@@ -27,9 +27,16 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  @include max(md) {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
 
   .h3 {
     margin-bottom: vw(20px);
+    @include max(md) {
+      margin-bottom: 8px;
+    }
   }
   .description {
     color: $cl-grey-dr;

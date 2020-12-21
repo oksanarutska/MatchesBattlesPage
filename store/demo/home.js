@@ -131,8 +131,9 @@ export const state = () => ({
                 {
                     id: 0,
                     name: "Group Stage",
-                    type: 'Live',
+                    status: 'Live',
                     time: "WATCH LIVE!",
+                    dateTime: moment().add(-1, "hours"),
                     disciplines: 'icons/disciplines.svg',
                     groups: ["Group A", "Group B"],
                     match: "Match #1",
@@ -143,6 +144,8 @@ export const state = () => ({
                     name: "Group Stage",
                     time: "19:00",
                     date: "March 8",
+                    status: 'Upcoming',
+                    dateTime: moment().add(1, "hours").add(5, "minutes"),
                     disciplines: 'icons/disciplines.svg',
                     groups: ["Group A", "Group B"],
                     match: "Match #2",
@@ -153,6 +156,8 @@ export const state = () => ({
                     name: "Group Stage",
                     time: "19:00",
                     date: "March 8",
+                    status: 'Upcoming',
+                    dateTime: moment().add(1, "hours").add(15, "minutes"),
                     disciplines: 'icons/disciplines.svg',
                     groups: ["Group A", "Group B"],
                     match: "Match #3",
@@ -163,6 +168,8 @@ export const state = () => ({
                     name: "Group Stage",
                     time: "19:00",
                     date: "March 8",
+                    status: 'Upcoming',
+                    dateTime: moment().add(1, "hours").add(25, "minutes"),
                     disciplines: 'icons/disciplines.svg',
                     groups: ["Group A", "Group B"],
                     match: "Match #4",
@@ -259,6 +266,27 @@ export const state = () => ({
         },
 
     ],
-   
+    infoPopupRegistration: {
+        title: 'Вы зарегистрированы',
+        team: ' Natus vincere (#353)'
+    },
+    menuPage: [
+        {
+            id: 0,
+            page: 'Support',
+            link: "/"
+        },
+        {
+            id: 1,
+            page: 'Rules',
+            link: "/"
+        },
+        {
+            id: 2,
+            page: 'FAQ',
+            link: "/"
+        },
+    ]
+
 
 })

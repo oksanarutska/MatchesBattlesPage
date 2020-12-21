@@ -47,7 +47,13 @@
         />
       </symbol>
 
-      <symbol id="arrow" max-width="20" max-height="20" viewBox="0 0 20 20" fill="none">
+      <symbol
+        id="arrow"
+        max-width="20"
+        max-height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
         <path
           d="M0 8.73737V11.2626H15.1515L8.20707 18.2071L10 20L20 10L10 0L8.20707 1.79293L15.1515 8.73737H0Z"
           style="fill: currentColor"
@@ -93,21 +99,39 @@
         />
       </symbol>
 
-      <symbol id="vk" max-width="26" max-height="16" viewBox="0 0 26 16" fill="none">
+      <symbol
+        id="vk"
+        max-width="26"
+        max-height="16"
+        viewBox="0 0 26 16"
+        fill="none"
+      >
         <path
           d="M25.3418 1.34917C25.5182 0.763134 25.3418 0.333374 24.5075 0.333374H21.7436C21.0404 0.333374 20.719 0.705161 20.5426 1.1135C20.5426 1.1135 19.1373 4.54023 17.1461 6.76213C16.5033 7.40866 16.2097 7.61282 15.8593 7.61282C15.6841 7.61282 15.4296 7.40866 15.4296 6.82262V1.34917C15.4296 0.645927 15.2267 0.333374 14.6406 0.333374H10.2977C9.85908 0.333374 9.59441 0.65853 9.59441 0.968562C9.59441 1.634 10.59 1.78775 10.6921 3.66307V7.73129C10.6921 8.62232 10.5321 8.78489 10.1792 8.78489C9.24279 8.78489 6.96418 5.34556 5.61189 1.4084C5.34849 0.643406 5.08257 0.334635 4.3768 0.334635H1.61424C0.824041 0.334635 0.666504 0.706421 0.666504 1.11476C0.666504 1.84825 1.6029 5.47789 5.02838 10.2783C7.31203 13.5564 10.527 15.3334 13.4559 15.3334C15.2115 15.3334 15.4283 14.9389 15.4283 14.2583V11.7806C15.4283 10.9917 15.5959 10.8329 16.1517 10.8329C16.5601 10.8329 17.2633 11.0396 18.9029 12.6187C20.7757 14.4915 21.0858 15.3321 22.1381 15.3321H24.9007C25.6896 15.3321 26.0841 14.9376 25.8572 14.1588C25.6089 13.3837 24.7141 12.2557 23.5269 10.9211C22.8817 10.1599 21.9176 9.34068 21.6239 8.93109C21.2143 8.40303 21.3328 8.16987 21.6239 7.70104C21.6252 7.7023 24.9914 2.96108 25.3418 1.34917Z"
           style="fill: currentColor"
         />
       </symbol>
 
-      <symbol id="play" max-width="35" max-height="35" viewBox="0 0 35 35" fill="none">
+      <symbol
+        id="play"
+        max-width="35"
+        max-height="35"
+        viewBox="0 0 35 35"
+        fill="none"
+      >
         <path
           d="M14 25.375V9.625L24.5 17.5L14 25.375ZM17.5 0C15.2019 0 12.9262 0.452651 10.803 1.33211C8.67984 2.21157 6.75066 3.50061 5.12563 5.12563C1.84374 8.40752 0 12.8587 0 17.5C0 22.1413 1.84374 26.5925 5.12563 29.8744C6.75066 31.4994 8.67984 32.7884 10.803 33.6679C12.9262 34.5474 15.2019 35 17.5 35C22.1413 35 26.5925 33.1563 29.8744 29.8744C33.1563 26.5925 35 22.1413 35 17.5C35 15.2019 34.5474 12.9262 33.6679 10.803C32.7884 8.67984 31.4994 6.75066 29.8744 5.12563C28.2493 3.50061 26.3202 2.21157 24.197 1.33211C22.0738 0.452651 19.7981 0 17.5 0Z"
           style="fill: currentColor"
         />
       </symbol>
 
-      <symbol id="flag" max-width="24" max-height="18" viewBox="0 0 24 18" fill="none">
+      <symbol
+        id="flag"
+        max-width="24"
+        max-height="18"
+        viewBox="0 0 24 18"
+        fill="none"
+      >
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
@@ -122,7 +146,13 @@
         />
       </symbol>
 
-      <symbol id="ggbet" max-width="62" max-height="15" viewBox="0 0 62 15" fill="none">
+      <symbol
+        id="ggbet"
+        max-width="62"
+        max-height="15"
+        viewBox="0 0 62 15"
+        fill="none"
+      >
         <rect width="62" height="15" fill="url(#pattern0)" />
         <defs>
           <pattern
@@ -187,7 +217,7 @@
         id="checkin"
         max-width="24"
         max-height="24"
-         viewBox="0 0 24 24"
+        viewBox="0 0 24 24"
         fill="none"
       >
         <path
@@ -217,12 +247,50 @@
         />
       </symbol>
 
-      <symbol id="check" max-width="22" max-height="22" viewBox="0 0 22 22" fill="none">
-        <path
-          d="M19.4 0.5L6.38 14.8181L2.6 11.9551H0.5L6.38 21.5L21.5 0.5H19.4Z"
-          fill="#20A95A"
+      <symbol
+        id="check"
+        max-width="44"
+        max-height="44"
+        viewBox="0 0 44 44"
+        fill="none"
+      >
+        <rect
+          x="1"
+          y="1"
+          width="42"
+          height="42"
+          rx="21"
+          fill="white"
+          stroke="#20A95A"
+          stroke-width="2"
         />
+        <mask
+          id="mask0"
+          mask-type="alpha"
+          maskUnits="userSpaceOnUse"
+          x="2"
+          y="2"
+          width="40"
+          height="40"
+        >
+          <rect
+            x="2.5"
+            y="2.5"
+            width="39"
+            height="39"
+            rx="19.5"
+            fill="white"
+            stroke="white"
+          />
+        </mask>
+        <g mask="url(#mask0)">
+          <path
+            d="M30.4 11.5L17.38 25.8181L13.6 22.9551H11.5L17.38 32.5L32.5 11.5H30.4Z"
+            fill="#20A95A"
+          />
+        </g>
       </symbol>
+
       <symbol
         id="arrow-simple"
         max-width="10"
@@ -249,49 +317,109 @@ export default {
 .svg-sprite {
   display: none;
 }
-.logo-icon{
+.logo-icon {
   width: vw(65px);
   height: vw(60px);
   object-fit: cover;
+  @include max(lg) {
+    width: 65px;
+    height: 60px;
+  }
 }
-.tickets{
+.tickets {
   width: vw(26px);
   height: vw(30px);
+  @include max(md) {
+    width: 20px;
+    height: 24px;
+  }
 }
-.arrow{
+.arrow {
   width: vw(20px);
   height: vw(20px);
+  @include max(md) {
+    width: 14px;
+    height: 14px;
+  }
 }
-.twitter{
+.twitter {
   width: vw(22px);
   height: vw(18px);
+  @include max(md) {
+    width: 22px;
+    height: 18px;
+  }
 }
-.twitch{
+.twitch {
   width: vw(19px);
   height: vw(19px);
+  @include max(md) {
+    width: 19px;
+    height: 19px;
+  }
 }
-.facebook{
+.facebook {
   width: vw(11px);
   height: vw(20px);
+  @include max(md) {
+    width: 11px;
+    height: 20px;
+  }
 }
-.vk{
+.vk {
   width: vw(26px);
   height: vw(16px);
+  @include max(md) {
+    width: 26px;
+    height: 16px;
+  }
 }
-.play{
+.play {
   width: vw(35px);
   height: vw(35px);
+  @include max(md) {
+    width: 25px;
+    height: 25px;
+  }
 }
-.registation-icon{
+.registation-icon {
   width: vw(24px);
   height: vw(24px);
+  @include max(md) {
+    width: 24px;
+    height: 24px;
+  }
 }
-.checkin{
+.checkin {
   width: vw(24px);
   height: vw(24px);
+  @include max(md) {
+    width: 24px;
+    height: 24px;
+  }
 }
-.schedul{
+.schedul {
   width: vw(24px);
   height: vw(24px);
+  @include max(md) {
+    width: 24px;
+    height: 24px;
+  }
+}
+.check {
+  width: vw(40px);
+  height: vw(40px);
+  @include max(md) {
+    width: 40px;
+    height: 40px;
+  }
+}
+.arrow-simple {
+  width: vw(10px);
+  height: vw(16px);
+  @include max(md) {
+    width: 10px;
+    height: 16px;
+  }
 }
 </style>

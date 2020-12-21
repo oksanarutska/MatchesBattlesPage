@@ -3,15 +3,15 @@
     :condition="card.status === 'Live'"
     :nuxtLinkProps="{
       to: '/',
-      class: 'matche-card matche-card-link',
+      class: 'battle-card battle-card-link',
     }"
     :component="'div'"
     :componentProps="{
-      class: 'matche-card',
+      class: 'battle-card',
     }"
   >
-    <p class="caption matche-name">{{ card.name }}</p>
-    <div v-if="card.status === 'Live'" class="matche-status matche-status_live">
+    <p class="caption battle-name">{{ card.name }}</p>
+    <div v-if="card.status === 'Live'" class="battle-status battle-status_live">
       <div class="show-date_wrapper">
         <svg class="play">
           <use xlink:href="#play"></use>
@@ -19,42 +19,29 @@
         <p class="caption">{{ card.time }}</p>
       </div>
     </div>
-    <div v-else class="matche-status">
+    <div v-else class="battle-status">
       <div class="show-date_wrapper">
         <h5 class="h5 time">{{ time }}</h5>
         <span class="caption">{{ date }}</span>
       </div>
     </div>
 
-    <div class="matche-container">
-      <div class="logo_wrapper">
-        <img :src="card.team1.logo" :alt="card.team1.name" />
-        <img :src="card.team2.logo" :alt="card.team2.name" />
+    <div class="battle-container">
+      <img class="disciplines" :src="card.disciplines" :alt="card.name" />
+      <div class="groups_container">
+        <div class="groups_wrapper">
+          <h5 class="h5" v-for="item in card.groups" :key="item.id">
+            {{ item }}
+          </h5>
+        </div>
+        <p class="match caption accent">{{ card.match }}</p>
       </div>
-      <div class="name-teams_wrapper">
-        <div class="name-team">
-          <h5 class="h5">{{ card.team1.name }}</h5>
-          <div class="team-rate">
-            <span class="rate">{{ card.team1.rate }}</span>
-          </div>
+      <div class="map_wrapper">
+        <div v-if="card.status === 'Upcoming'">
+          <span class="caption">Starts in: {{ timeRemaining }}</span>
+          <span class="caption dot">•</span>
         </div>
-        <div class="name-team">
-          <h5 class="h5">{{ card.team2.name }}</h5>
-          <div class="team-rate">
-            <span class="rate">{{ card.team2.rate }}</span>
-          </div>
-        </div>
-      </div>
-      <div class="system-partner_wrapper">
-        <div class="left-part">
-          <div v-if="card.status === 'Upcoming'">
-            <span class="caption">Starts in: {{ timeRemaining }}</span>
-            <span class="caption dot">•</span>
-          </div>
-          <p class="caption system">{{ card.system }}</p>
-        </div>
-
-        <img class="partner" :src="card.partner" alt="icon" />
+        <p class="caption system">{{ card.map }}</p>
       </div>
     </div>
   </NuxtLinkCondition>
@@ -65,7 +52,7 @@ import NuxtLinkCondition from "../common/NuxtLinkCondition";
 import moment from "moment";
 
 export default {
-  name: "MatcheCard",
+  name: "BattleCard",
   components: {
     NuxtLinkCondition,
   },
@@ -94,11 +81,11 @@ export default {
       return;
     }
     this.timer = setInterval(() => {
-      const timeToMatch = moment.duration(
+      const timeToBattle = moment.duration(
         moment(this.card.dateTime).diff(moment())
       );
 
-      this.timeRemaining = `${timeToMatch.hours()} hours ${timeToMatch.minutes()} min`;
+      this.timeRemaining = `${timeToBattle.hours()} hours ${timeToBattle.minutes()} min`;
     }, 1000);
   },
   destroyed() {
@@ -108,7 +95,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.matche-card {
+.battle-card {
   width: vw(336px);
   min-height: vw(360px);
   padding: vw(25px);
@@ -135,7 +122,7 @@ export default {
       border: 1px solid $cl-red;
     }
   }
-  .matche-name {
+  .battle-name {
     position: absolute;
     top: vw(25px);
     left: vw(25px);
@@ -145,7 +132,7 @@ export default {
       left: 15px;
     }
   }
-  .matche-status {
+  .battle-status {
     position: absolute;
     right: 0;
     top: 0;
@@ -198,85 +185,57 @@ export default {
     }
   }
 }
-.matche-container {
+.battle-container {
   width: 100%;
   margin-top: auto;
-  .logo_wrapper {
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    img {
-      width: vw(50px);
-      height: vw(50px);
-      @include max(md) {
-        width: 40px;
-        height: 40px;
-      }
-      &:not(:last-child) {
-        margin-right: vw(15px);
-        @include max(md) {
-          margin-right: 12px;
-        }
-      }
+  .disciplines {
+    width: vw(30px);
+    height: vw(30px);
+    margin-bottom: vw(15px);
+    @include max(md) {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 10px;
     }
   }
-  .name-teams_wrapper {
-    width: 100%;
-    margin-bottom: 10px;
-    @include max(md) {
-      margin-bottom: 5px;
-    }
-    .name-team {
+  .groups {
+    &_container {
       width: 100%;
+      margin-bottom: vw(10px);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      color: $cl-black;
-      &:not(:last-child) {
+      @include max(md) {
         margin-bottom: 5px;
+      }
+      .match {
+        padding: vw(10px) vw(15px);
+        color: $cl-grey-dr;
+        background-color: #f0f0f0;
+        border-radius: 4px;
         @include max(md) {
-          margin-bottom: 0px;
+          padding: 10px 20px;
         }
       }
-      .team-rate {
-        width: vw(60px);
-        height: vw(24px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: $cl-grey-lt;
-        border: 1px solid rgba(151, 151, 151, 0.1);
-        @include max(md) {
-          width: 55px;
-          height: 20px;
-        }
-      }
+    }
+    &_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
-  .system-partner_wrapper {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .left-part {
-      display: flex;
-      align-items: center;
-      .dot {
-        margin: 0 4px;
-      }
-    }
-    .caption {
-      color: $cl-grey-dr;
-    }
+}
+.map_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
-    .partner {
-      width: vw(62px);
-      height: vw(15px);
-      @include max(lg) {
-        width: 62px;
-        height: 15px;
-      }
-    }
+  .dot {
+    margin: 0 4px;
+  }
+  .caption {
+    color: $cl-grey-dr;
   }
 }
 </style>

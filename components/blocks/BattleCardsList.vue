@@ -1,14 +1,17 @@
 <template>
-  <div class="matche-cards-list">
-    <MatcheCard :card="card" v-for="card in cards" :key="card.id" />
+  <div class="battle-cards-list">
+    <BattleCard :card="card" v-for="card in cards" :key="card.id" />
   </div>
 </template>
 
 <script>
-import MatcheCard from "~/components/blocks/MatcheCard";
+import BattleCard from "~/components/blocks/BattleCard";
 
 export default {
-  name: "MatcheCardsList",
+  name: "BattleCardsList",
+  components: {
+    BattleCard,
+  },
   data() {
     return {};
   },
@@ -18,14 +21,11 @@ export default {
       default: () => [],
     },
   },
-  components: {
-    MatcheCard,
-  },
 };
 </script>
 
 <style lang="scss" scoped>
-.matche-cards-list {
+.battle-cards-list {
   display: grid;
   grid-column-gap: vw(35px);
   grid-auto-flow: column;

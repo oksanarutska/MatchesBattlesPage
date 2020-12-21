@@ -21,7 +21,7 @@
           <div class="line"></div>
         </div>
         <div class="registration-block__description">
-          <p class="subtitle accent title">Registration</p>
+          <p class="subtitle accent title">Check-in</p>
           <p class="subtitle">29 sep, 19:00 – 20 nov, 10:00</p>
         </div>
       </div>
@@ -32,7 +32,7 @@
           </svg>
         </div>
         <div class="registration-block__description">
-          <p class="subtitle accent title">Registration</p>
+          <p class="subtitle accent title">Scheduling</p>
           <p class="subtitle">29 sep, 19:00 – 20 nov, 10:00</p>
         </div>
       </div>
